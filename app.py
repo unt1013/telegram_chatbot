@@ -18,5 +18,10 @@ def send():
 def write():
     return render_template('write.html')
 
+@app.route(f'/{token}', methods=['POST'])
+def telegram():
+    # chat_id = request.get_json[][][]
+    return "ok", 200
+
 if __name__ == ("__main__"):
     app.run(debug=True)
